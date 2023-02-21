@@ -8,13 +8,13 @@
 function letterCount(str, letter) {
   let numberOfOccurence = 0;
   
-  for(let x = 0 ; x < str.length, x++) {
+  for(let x = 0; x < str.length; x++) {
     
-    if(str.length === letter) {
+    if(str[x].toLowerCase() === letter.toLowerCase()) {
       
 numberOfOccurence += 1;
     }
   }
 return numberOfOccurence;
 }
-console.log(numberOfOccurence("How are you doing" "o"));
+console.log(letterCount("How are you doing", "O"));
